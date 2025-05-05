@@ -53,7 +53,7 @@ public abstract class ABaseService<T extends ABaseEntity> implements IBaseServic
 
         if (op.isEmpty()) {
             throw new Exception("Registro no encontrado");
-        }else if(op.get().getDeletedAt() != null) {
+        }else if(op.get().getUpdatedAt() != null) {
             throw new Exception("Registro inhabilitado");
         }
 
