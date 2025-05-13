@@ -52,7 +52,7 @@ RUN mvn clean install -Dmaven.test.skip=true
 RUN ls -l /app-compiled/target/
 
 # Ejecutar la aplicación
-CMD java -jar /app-compiled/target/AgendaManager-0.0.1-SNAPSHOT.jar && exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
+CMD java -jar /app-compiled/target/BackPM-0.0.1-SNAPSHOT.jar && exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
 
 # Exponer el puerto
 EXPOSE 9000
