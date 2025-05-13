@@ -2,7 +2,7 @@
 spring.application.name=BackendPM
 
 # # ConexiÃ³n a la base de datos PostgreSQL
-spring.datasource.url=jdbc:serve-postgres://localhost:5432/P2PM
+spring.datasource.url=jdbc:postgresql://serve-postgres:5432/P2PM
 spring.datasource.username=postgres
 spring.datasource.password=abcd1234
 spring.datasource.driver-class-name=org.postgresql.Driver
